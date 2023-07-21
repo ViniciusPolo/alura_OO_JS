@@ -1,0 +1,10 @@
+Javascript orienta a objetos
+Classe -> Carro
+Atributos -> Cor, Tipo, Ano Fabricação, tipo Combustível, Marca, Modelo, Flex: Boolean,
+Métodos -> Anda, da Ré, Reboca etc
+
+Objeto literal - é unico e não pode ser manipulado, serve como molde para os demais
+
+herança de protótipo: até ES5
+
+Arrow functions não são içadas (hoisting), por isso não funcionam nas classes, além do mais não possuem o método prototype e métodos como bind, call e applu não funcionamcd ..
