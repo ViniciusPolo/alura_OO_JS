@@ -7,4 +7,5 @@ Objeto literal - é unico e não pode ser manipulado, serve como molde para os d
 
 herança de protótipo: até ES5
 
-Arrow functions não são içadas (hoisting), por isso não funcionam nas classes, além do mais não possuem o método prototype e métodos como bind, call e applu não funcionamcd ..
+Arrow functions não são içadas (hoisting), por isso não funcionam nas classes, além do mais não possuem o método prototype e métodos como bind, call e applu não funcionam
+
