@@ -9,3 +9,4 @@ herança de protótipo: até ES5
 
 Arrow functions não são içadas (hoisting), por isso não funcionam nas classes, além do mais não possuem o método prototype e métodos como bind, call e applu não funcionam
 
+UpperCase if class, to normal functions use lowercase

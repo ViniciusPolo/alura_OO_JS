@@ -1,41 +1,50 @@
-const user = {
-    nome: "Vinicius",
-    email: "vinicius@email.com",
-    nascimento: "1987/04/11",
-    role: "estudante",
-    ativo: true,
-    exibirInfos: function (){
-        console.log(this.nome, this.email)
+function User(nome, email) {
+    this.nome = nome
+    this.email = email
+
+    this.exibirInfos = function() {
+        return `${this.nome}, ${this.email}`
     }
 }
 
-const admin = {
-    nome: "Angélica",
-    email: "angelica@email.com",
-    nascimento: "1989/17/12",
-    role: "admim",
-    ativo: true,
-    criarCurso(){
-        console.log("Curso Criado")
+const novoUser = new User('Juliana', 'ju@email.com')
+console.log(novoUser.exibirInfos())
+
+function Admin(role) {
+    //Usando User
+    User.call(this, 'Andreia', 'Andreia@email.com' )
+    this.role = role || 'estudante'
+}
+
+Admin.prototype = Object.create(User.prototype)
+const novoUser2 = new Admin('admin')
+console.log(novoUser2.exibirInfos())
+console.log(novoUser2.role)
+
+const user3 = {
+    exibirInfos: function (nome){
+        return nome
     }
 }
 
-//Criando protótipo
-//(quem herda propriedades, de onde herda propriedades)
-Object.setPrototypeOf(admin, user)
-
-admin.criarCurso()
-//admin pode usar exibir infos agora
-admin.exibirInfos()
-
-//exibe o objeto prototipo do admin, no caso user. Seré descontinuado
-console.log(admin.__proto__)
-
-//exibe o prototipo básico do JS, só funciona no console do navegador. Será descontinuado
-console.log(admin.__proto__.__proto__)
-
-//Só funciona no navegador
-String.prototype
+const novoUser3 = Object.create(user3)
+console.log(novoUser3.exibirInfos('Vinicius'))
+//user3 é protótipo para novoUser3? // true
+console.log(user3.isPrototypeOf(novoUser3))
 
 
+const user4 = {
+    //constructor quando se usa um objeto literal
+    init: function(nome, email) {
+        this.nome = nome
+        this.email = email
+    },
+    exibirInfos: function (nome){
+        //com init se usa o this, para o nome não ficar fora de contexto
+        return this.nome
+    }
+}
 
+const novoUser4 = Object.create(user4)
+novoUser4.init('André', 'andre@email.com')
+console.log(novoUser4.exibirInfos())
