@@ -1,0 +1,21 @@
+{
+  "name": "alura_oo_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViniciusPolo/alura_OO_JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViniciusPolo/alura_OO_JS/issues"
+  },
+  "homepage": "https://github.com/ViniciusPolo/alura_OO_JS#readme"
+}

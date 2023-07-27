@@ -10,3 +10,5 @@ herança de protótipo: até ES5
 Arrow functions não são içadas (hoisting), por isso não funcionam nas classes, além do mais não possuem o método prototype e métodos como bind, call e applu não funcionam
 
 UpperCase if class, to normal functions use lowercase
+
+Para se usar a importação e exportação de modulos em EC6 deve-se gerar um package.json com npm init -y e adicionar   "type": "module",
