@@ -12,3 +12,5 @@ Arrow functions não são içadas (hoisting), por isso não funcionam nas classe
 UpperCase if class, to normal functions use lowercase
 
 Para se usar a importação e exportação de modulos em EC6 deve-se gerar um package.json com npm init -y e adicionar   "type": "module",
+
+strict mode?
