@@ -24,5 +24,8 @@ console.log(maisUmAdmin.exibirInfos())
 maisUmAdmin.nome = "Felipe"
 console.log(maisUmAdmin.nome)
 console.log(maisUmAdmin.exibirInfos())
-maisUmAdmin.nome = ""
+//maisUmAdmin.nome = ""
 console.log(maisUmAdmin.nome)
+
+const novoDocente = new Docente('Guilherme', 'gui@email.com', '2007-06-22')
+console.log(novoDocente.exibirInfos())

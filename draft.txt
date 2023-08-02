@@ -14,3 +14,17 @@ UpperCase if class, to normal functions use lowercase
 Para se usar a importação e exportação de modulos em EC6 deve-se gerar um package.json com npm init -y e adicionar   "type": "module",
 
 strict mode?
+
+SOLID
+Single Resposibility principle (Principio da responsabilidade única) - Uma classe é responsável por uma tarefa
+Open/Closed principle (Algo fechado, evita ficar mexendo, cria novo)
+Liskov Substitution principle, a super classe é majoritaria, algo feito na sub, nâo pode quebrar o que foi feito na super
+Interface Segregation principle
+Dependency Inversion principle
+
+Exemplo de interface ("tipagem do JS  OO")
+interface Empregado {
+    nome: string;
+    sobrenome: string;
+    nomeCompleto(): string;
+}

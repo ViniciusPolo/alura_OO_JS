@@ -9,6 +9,10 @@ export default class Docente extends User {
         return `Curso de ${estudante} aprovada no curso de ${curso}`
     }
 
+    exibirInfos(){ //polimorfico, há a mesma função em User, mas aqui tem comportamento diferente
+        return `${this.nome}, ${this.email}, ${this.role}`
+    }
+
 }
 
 // const novoDocente = new Docente('Alexandre', 'xand@email.com', '2021-12-02')

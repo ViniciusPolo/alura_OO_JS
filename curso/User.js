@@ -34,7 +34,7 @@ export default class User { //como expot default poderá ser usado em outro luga
     }
 
     set nome(novoNome){
-        if (typeof novoNome !== "string" || novoNome !== "") throw new Error('Nome deve ser String e não pode ser vazio')
+        if (typeof novoNome !== "string" || novoNome == "") throw new Error('Nome deve ser String e não pode ser vazio')
         this.#nome = novoNome
     }
 
@@ -55,7 +55,7 @@ export default class User { //como expot default poderá ser usado em outro luga
     }
 
     exibirInfos(){
-        return `${this.nome}, ${this.email}, ${this.role}`
+        return `${this.nome}, ${this.email}, ${this.nascimento}`
     }
 
     //com os getter acima essa function aqui não precia foi usado para teste antes
